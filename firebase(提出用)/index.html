@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <title>食材の価格を検索して保存する</title>
+    <link rel="stylesheet" href="top_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <h1>くらたべ</h1>
+    <!-- チラシの画像を検索した結果を表示させて、価格をローカルストレージにいれる、それをグラフで表示する -->
+    <h1>食材の価格を検索して保存する</h1>
+
+    
+    <input type="text" id="query" placeholder="食材の価格を検索">
+    <button onclick="searchImages()">検索</button>
+
+    <div id="imageContainer"></div>
+
+    <div id="information">
+      <div>
+      <label for="dateInput">日付:</label>
+      <input type="date" id="dateInput">
+    </div>
+    <div>
+      <label for="key">商品名:</label>
+      <input type="text" id="key">
+    </div>
+    <div>
+      <label for="memo">価格（半角数字）:</label>
+      <input type="text" id="memo">
+    </div>
+    <div>
+    <ul>
+      <li id="save">Save</li>
+      <li id="clear">Clear</li>
+    </ul>
+    </div>
+
+    <canvas id="myChart"></canvas>
+  
+    
+    <script src="script.js"></script>
+    
+</body>
+    
+</body>
+</html>

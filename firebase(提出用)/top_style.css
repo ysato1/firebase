@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: "Arial", "メイリオ";
+  }
+
+  body {
+    font-family: "Arial", "メイリオ";
+  }
+
+  /* メニューのスタイル */
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    text-align: right;
+  }
+
+  .menu li {
+    display: inline-block;
+  }
+
+  .menu li:first-child {
+    margin-left: 0;
+  }
+
+  .menu li a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  /* トップバナーのスタイル */
+  .top-banner {
+    display: block;
+    width: 100%;
+    height: auto;
+  }

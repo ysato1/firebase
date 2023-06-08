@@ -1,0 +1,16 @@
+#information {
+    margin-top: 50px;
+    
+
+}
+
+
+li{
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #fff;
+    display:inline;  /* 定義 */
+    width: 40px;
+    cursor: pointer;
+    color:#0d7dfd;
+}

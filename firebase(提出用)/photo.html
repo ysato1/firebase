@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>写真で登録</title>
+    <link rel="stylesheet" href="top_style.css">
+</head>
+<body>
+    <h1>くらたべ</h1>
+    <div>
+    <nav class="nav">
+      <ul class="menu">
+        <li><a href="./top.html">ホーム</a></li>
+        <li><a href="./index.html">値段検索</a></li>
+        <li><a href="./photo.html">写真で登録</a></li>
+        <li><a href="./database.html">登録済みの情報をみる</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <h3 id='title'>値段スキャン</h3>
+    <!--- 画像をアップロード --->
+    <div id="uploadArea"><l>写真をアップロード : </l><input type="file" id="uploader"></div>
+    <hr>
+    <!--- Google Cloud Vision APIに画像ファイルを送り、結果を表示　--->
+    <div class="resultArea hidden">
+        <!--- アップロードされた画像を表示 --->
+        <div id="showPic"></div>
+    </div>
+    <section class="resultArea hidden">
+        <!-- テキスト解読の結果を表示 -->
+        <h4>写真に含まれるテキストを表示します。</h4>
+        <div id="textBox"></div>
+      </section>
+     
+      <div id="output"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+    <script type="module" src="./photo.js"></script>
+
+
+    </body>
+
+
+    
+</body>
+</html>
